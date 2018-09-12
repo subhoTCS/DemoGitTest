@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
 <INVOKE TIMEOUT="" SERVICE="pub.math:addInts" VALIDATE-IN="$none" VALIDATE-OUT="$none">
-  <COMMENT></COMMENT>
+  <COMMENT>hi</COMMENT>
 
   <!-- nodes -->
 
@@ -20,6 +21,7 @@
     <value name="field_name">addIntsInput</value>
     <value name="field_type">record</value>
     <value name="field_dim">0</value>
+    <value name="wrapper_type">IData</value>
     <value name="nillable">true</value>
     <value name="form_qualified">false</value>
     <value name="is_global">false</value>
@@ -236,6 +238,7 @@
     <value name="field_name">addIntsOutput</value>
     <value name="field_type">record</value>
     <value name="field_dim">0</value>
+    <value name="wrapper_type">IData</value>
     <value name="nillable">true</value>
     <value name="form_qualified">false</value>
     <value name="is_global">false</value>
@@ -272,6 +275,9 @@
 </MAPDELETE>
 
 <MAPDELETE FIELD="/Input2;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/value;1;0">
 </MAPDELETE>
 </MAP>
 </INVOKE>
